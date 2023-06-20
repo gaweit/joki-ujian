@@ -1,0 +1,84 @@
+untuk biaya sudah saya Analisa, kita sanggupin di angka 1.200.000 dengan kesimpulan spesfikasi berdasarkan keterngan di atas :
+ aplikasi berbasis web surat telaah staf
+1.otomatis cetak surat
+2.Jenis surat (1 Jenis surat telaah staf)
+3.inputan berdasarkan contoh yg diberikan
+4.dinamis to database 
+5.localserver
+6.menu laporan per priode
+
+KET:
+bikin surat telaah staf otomatis 
+
+di dalam menu  surat telaah staf 
+ada tampilan 
+ No ( itu pakai tahun bulan tanggal dan nomor urut  jadi ky gni kak 221108.001
+
+22( tahun)
+11 ( bulan )
+08 ( tanggal )
+001 ( nomor urut )
+
+trs nomor surat , tanggal surat , sama perihal ,  kak
+===
+kalau untuk bagian input 
+
+ ada
+ hari/ tanggal (date) ,
+dari , itu dropdown kak
+  lampiran(text isi manual ), perihal (text isi manual) , latar belakang ( text isi manual ) , maksud dan tujuan ( text isi manual ), permasalahan ( text isi manual) ,usulan( text isi manual ) 
+
+untuk diketahui dan dibuat oleh nya itu tu  ketik manual aja kak dengan nip nya juga manual aja kak
+
+
+====
+
+jadi kak 
+
+
+inputan nya 
+
+• Kepada Yth : 
+( DropDown
+- Direksi PT. Air Minum Intan Banjar
+-Direktur Umum PT. Air Minum Intan Banjar
+- Direktur Teknik PT. Air Minum Intan Banjar
+- Direktur Utama PT. Air Minum Intan Banjar
+
+
+• Dari ( ketik manual ) // 
+• Hari /Tanggal ( date )
+• Lampiran ( ketik manual)
+• Perihal ( ketik manual )
+• Latar Belakang ( Ketik manual )
+• Maksud dan Tujuan ( Ketik manual)
+• Permasalahan ( ketik manual)
+• Usulan ( ketik manual)
+• Penutup ( ketik manual)
+
+• Diketahui Oleh ( ketik manual)
+ • Diketahui Nama pegawai ( ketik manual)
+• NIPP Pegawai ( ketik manual) ex:  82(spasi)05(spasi) 63(spasi) 0111
+
+•  Dibuat oleh ( *otomatis ambil di Dari*)
+• Dibuat oleh nama pegawai ( ketik manual)
+• NIPP pegawai ( ketik manual ) sama seperti contoh nipp di atas .
+
+========================================================================
+
+Query:
+kepada
+dari
+tgl_surat
+lampiran
+perihal
+latar_belakang
+maksud_tujuan
+permasalahan
+usulan
+penutup
+diketahui_oleh
+nama_diketahui
+nipp_diketahui
+nama_dibuat
+nipp_dibuat
