@@ -79,8 +79,6 @@
                         ?>
                         <div class="text-center m-b-md">
                             <h1> <b></b></h1>
-                            <b> Animasi Berbasis Labolatorium Digital Pada Materi Sistem Peredaran Darah Mencit Untuk
-                                Siswa SMA</b>
                         </div>
                         <form action="<?php echo base_url('login') ?>" method="post">
                             <div class="form-group">
@@ -96,14 +94,10 @@
                                 <!-- <span class="help-block small">Yur strong password</span> -->
                             </div>
                             <button class="btn btn-primary btn-block">Login</button>
-                            <a class="btn btn-default btn-block" href="<?php echo base_url('register') ?>">Daftar
-                                Akun</a>
                         </form>
                         <hr>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <strong>Animasi Berbasis Labolatorium Digital Pada Materi Sistem Peredaran
-                                    Darah Mencit Untuk Siswa SMA</strong> <br>
                                 Copyright @ <?php echo date('Y') ?> <br>
                                 <a href="<?php echo base_url() ?>">Home</a>
                             </div>

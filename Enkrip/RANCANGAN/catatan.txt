@@ -1,5 +1,0 @@
-menu kuis=hasil jawaban kuis tersimpan berupa nama dan skor\
-
-Tebak Kata = hasil jawaban tersimpan berupa nama dan skor
-Catatan:
-Otomatis next k soal berikut nya setelah klik  tombol jawab

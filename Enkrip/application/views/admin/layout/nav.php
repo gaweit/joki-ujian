@@ -11,9 +11,6 @@ $user_aktif = $this->user_model->detail($id_user);
         <!-- begin sidebar user -->
         <ul class="nav">
             <li class="nav-profile" style="margin-top: 23px;">
-                <div class="image">
-                    <a href="javascript:;"><img src="<?php echo base_url() ?>assets/img/gaweicon.png" alt="" /></a>
-                </div>
                 <div class="info">
                     Admin
                     <small style="color: white;"><i class="fa fa-circle text-success"></i>

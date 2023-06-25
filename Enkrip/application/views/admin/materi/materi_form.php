@@ -18,20 +18,26 @@
             </div>
             <br>
             <div class="form-horizontal form-bordered" data-parsley-validate="true" name="demo-form">
-                <form action="<?php echo $action; ?>" method="post">
+                <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
                     <div class="form-group col-md-12">
-                        <label for="varchar">Isi Materi</label>
-                        <textarea name="isi_materi" id="" cols="30" rows="10"
-                            class="form-control"><?= $isi_materi ?></textarea>
+                        <label for="varchar">Dokumen</label>
+                        <input type="file" class="form-control" name="nama_dokumen">
+                        <!-- accept="image/png, image/jpeg, image/jpg, image/gif" -->
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="varchar">Dokumen</label>
+                        <input type="file" class="form-control" name="nama_enkrip"
+                            accept="image/png, image/jpeg, image/jpg, image/gif">
                     </div>
                     <div class="form-group col-md-12">
                         <label for="tgl">Tanggal <?php echo form_error('tgl') ?></label>
-                        <input type="date" class="form-control" name="tgl" value="<?= $tgl ?>">
+                        <input type="date" class="form-control" name="tgl" value="<?= date('Y-m-d') ?>">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label"></label>
-                        <input type="hidden" name="id_materi" value="<?php echo $id_materi; ?>" />
+                        <input type="hidden" name="id_dokumen" value="<?php echo $id_dokumen; ?>" />
+                        <input type="hidden" name="id_user" value="1" />
                         <button type="submit" class="btn btn-primary"><?php echo $button ?></button>
                         <a href="<?php echo base_url('admin/materi') ?>" class="btn btn-danger">Cancel</a>
                     </div>

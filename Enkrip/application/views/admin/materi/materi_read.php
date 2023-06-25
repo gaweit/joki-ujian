@@ -21,7 +21,11 @@
                     <table class="table table-hover">
                         <tr>
                             <td>Isi Materi</td>
-                            <td><?php echo $isi_materi; ?></td>
+                            <td><?php echo $nama_dokumen; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Isi Materi</td>
+                            <td><?php echo $nama_enkrip; ?></td>
                         </tr>
                         <tr>
                             <td>Tanggal</td>

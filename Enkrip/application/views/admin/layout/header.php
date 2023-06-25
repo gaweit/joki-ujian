@@ -17,7 +17,7 @@ $user_aktif = $this->user_model->detail($id_user);
             <!-- begin mobile sidebar expand / collapse button -->
             <div class="navbar-header">
                 <a href="<?php base_url('admin/dasbor') ?>" class="navbar-brand"><span class="navbar-logo"><i
-                            class="ion-ios-cloud"></i></span> <b>Labor</b> Admin </a>
+                            class="ion-ios-cloud"></i></span> <b>Encrypt</b> Admin </a>
                 <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>

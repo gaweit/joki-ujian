@@ -41,7 +41,7 @@ $user_aktif = $this->user_model->detail($id_user);
                 <a href="javascript:;">
                     <b class="caret pull-right"></b>
                     <i class="fa fa-database bg-gradient-red"></i>
-                    <span>Data Master</span>
+                    <span>Dokumen</span>
                 </a>
                 <ul class="sub-menu">
                     <li><a href="<?php echo base_url('admin/bidang') ?>">Data Gejala</a></li>

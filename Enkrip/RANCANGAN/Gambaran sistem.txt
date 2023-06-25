@@ -1,7 +1,0 @@
-dimulai dari start lalu masuk ke menu utama, dimenu utama terdapat 
-praktikum, ok
-materi, ok
-tebak Kata, ok
-kuis, ok
-profil, 
-pengaturan.

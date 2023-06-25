@@ -52,7 +52,8 @@ if($this->session->flashdata('sukses')) {
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Isi Materi</th>
+                            <th>Nama Dokumen</th>
+                            <th>Encript Dokumen</th>
                             <th>Action</th>
                         </tr>
 
@@ -64,14 +65,19 @@ if($this->session->flashdata('sukses')) {
                 ?>
                         <tr>
                             <td width="80px"><?php echo ++$start ?></td>
-                            <td><?php echo $materi->isi_materi ?></td>
+                            <td><a target="_blank" class="btn btn-primary"
+                                    href="<?php echo base_url('file/dokumen/'. $materi->nama_dokumen );?>">Lihat</a>
+                            </td>
+                            <td><a target="_blank" class="btn btn-primary"
+                                    href="<?php echo base_url('file/dokumen/'. $materi->nama_enkrip );?>">Lihat</a>
+                            </td>
                             <td style="text-align:center" width="200px">
                                 <?php 
-				echo anchor(base_url('admin/materi/read/'.$materi->id_materi),'<i class="btn btn-primary btn-s fa fa-eye" title="read"> </i> '); 
+				echo anchor(base_url('admin/materi/read/'.$materi->id_dokumen),'<i class="btn btn-primary btn-s fa fa-eye" title="read"> </i> '); 
 				echo ' '; 
-				echo anchor(base_url('admin/materi/update/'.$materi->id_materi),'<i class="btn btn-warning btn-s fa fa-edit" title="Edit"> </i>'); 
+				echo anchor(base_url('admin/materi/update/'.$materi->id_dokumen),'<i class="btn btn-warning btn-s fa fa-edit" title="Edit"> </i>'); 
 				echo '  '; 
-				echo anchor(base_url('admin/materi/delete/'.$materi->id_materi),'<i class="btn btn-danger btn-s fa fa-trash" title="Delete"> </i>','onclick="javasciprt: return confirm(\'Are You Sure ?\')"'); 
+				echo anchor(base_url('admin/materi/delete/'.$materi->id_dokumen),'<i class="btn btn-danger btn-s fa fa-trash" title="Delete"> </i>','onclick="javasciprt: return confirm(\'Are You Sure ?\')"'); 
 				?>
                             </td>
                         </tr>
