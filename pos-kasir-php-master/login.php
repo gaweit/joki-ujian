@@ -68,13 +68,12 @@
                                         class="fa fa-lock"></i>
                                     SIGN IN</button>
                             </form>
-                            <!-- <hr>
-							<div class="text-center">
-								<a class="small" href="forgot-password.html">Forgot Password?</a>
-							</div>
-							<div class="text-center">
-								<a class="small" href="register.html">Create an Account!</a>
-							</div> -->
+                            <hr>
+                            <div class="text-center">
+                                <p>Jl. Danau Sunter Utara A5, Sunter Agung,
+                                    Tanjung Priok
+                                    Jakarta Utara 14350, Indonesia</p>
+                            </div>
                         </div>
                     </div>
                 </div>
