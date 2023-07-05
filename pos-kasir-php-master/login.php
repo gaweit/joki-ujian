@@ -53,6 +53,7 @@
                         <div class="p-5">
                             <div class="text-center">
                                 <p><img style="width: 50%;" src="assets/img/buah.png" alt=""></p>
+                                Point Of Sale
                                 <h4 class="h4 text-gray-900 mb-4"><b>Toko Total Buah</b></h4>
                             </div>
                             <form class="form-login" method="POST">
