@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!-- saved from url=(0146)http://localhost/phpmyadmin/tbl_structure.php#PMAURL-5:pmd_general.php?db=penjualan&table=&server=1&target=&token=a1c51a1c49ac88de77e7a6dca93b22d7 -->
+<html lang="id" dir="ltr" class="chrome chrome114"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/phpmyadmin.css.php"><link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/jquery-ui-1.9.2.custom.css"><title>localhost / 127.0.0.1 / penjualan | phpMyAdmin 4.2.11</title><script type="text/javascript" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/whitelist.php"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/get_scripts.js.php"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/messages.php"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/get_image.js.php"></script><script type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"token=a1c51a1c49ac88de77e7a6dca93b22d7",opendb_url:"db_structure.php",safari_browser:"0",querywindow_height:"400",querywindow_width:"600",collation_connection:"utf8mb4_general_ci",lang:"id",server:"1",table:"supplier",db:"penjualan",token:"a1c51a1c49ac88de77e7a6dca93b22d7",text_dir:"ltr",pma_absolute_uri:"http://localhost/phpmyadmin/",pma_text_default_tab:"Jelajahi",pma_text_left_default_tab:"Struktur",confirm:"1"});
+AJAX.scriptHandler.add("jquery/jquery-1.8.3.min.js",0).add("whitelist.php?lang=id&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7",1).add("ajax.js",0).add("keyhandler.js",1).add("jquery/jquery-ui-1.9.2.custom.min.js",0).add("jquery/jquery.sprintf.js",0).add("jquery/jquery.cookie.js",0).add("jquery/jquery.mousewheel.js",0).add("jquery/jquery.event.drag-2.2.js",0).add("jquery/jquery-ui-timepicker-addon.js",0).add("jquery/jquery.ba-hashchange-1.3.js",0).add("jquery/jquery.debounce-1.0.5.js",0).add("jquery/jquery.menuResizer-1.0.js",0).add("cross_framing_protection.js",0).add("rte.js",1).add("tracekit/tracekit.js",1).add("error_report.js",1).add("messages.php?lang=id&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7",0).add("get_image.js.php?theme=pmahomme",0).add("doclinks.js",1).add("functions.js",1).add("navigation.js",0).add("indexes.js",1).add("common.js",1).add("jqplot/jquery.jqplot.js",0).add("jqplot/plugins/jqplot.pieRenderer.js",1).add("jqplot/plugins/jqplot.highlighter.js",1).add("canvg/canvg.js",1).add("jquery/jquery.tablesorter.js",0).add("tbl_structure.js",1).add("codemirror/lib/codemirror.js",0).add("codemirror/mode/sql/sql.js",0).add("codemirror/addon/runmode/runmode.js",0);
+$(function() {AJAX.fireOnload("whitelist.php?lang=id&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("tracekit/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("jqplot/plugins/jqplot.pieRenderer.js");AJAX.fireOnload("jqplot/plugins/jqplot.highlighter.js");AJAX.fireOnload("canvg/canvg.js");AJAX.fireOnload("tbl_structure.js");});
+// ]]></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/get_scripts.js(1).php"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/get_scripts.js(2).php"></script></head><body style="padding-top: 58px;"><div id="pma_navigation"><div id="pma_navigation_resizer"></div><div id="pma_navigation_collapser">←</div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="http://localhost/phpmyadmin/navigation.php?ajax_request=1&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"></a><!-- LOGO START --><div id="pmalogo">    <a href="http://localhost/phpmyadmin/index.php?token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a></div><!-- LOGO END --><!-- LINKS START --><div id="navipanellinks"><a href="http://localhost/phpmyadmin/index.php?token=a1c51a1c49ac88de77e7a6dca93b22d7" title="Beranda"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Beranda" alt="Beranda" class="icon ic_b_home"></a><a href="http://localhost/phpmyadmin/querywindow.php?db=penjualan&amp;table=supplier&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;no_js=true" id="pma_open_querywindow" class="disableAjax" title="Jendela Pencarian"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Jendela Pencarian" alt="Jendela Pencarian" class="icon ic_b_selboard"></a><a href="http://localhost/phpmyadmin/doc/html/index.html" target="documentation" title="Dokumentasi phpMyAdmin"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Dokumentasi phpMyAdmin" alt="Dokumentasi phpMyAdmin" class="icon ic_b_docs"></a><a href="http://localhost/phpmyadmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.6%2Fen%2Findex.html" target="mysql_doc"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Dokumentasi" alt="Dokumentasi" class="icon ic_b_sqlhelp"></a><a href="http://localhost/phpmyadmin/tbl_structure.php#" id="pma_navigation_reload" title="Reload navigation panel"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Reload navigation panel" alt="Reload navigation panel" class="icon ic_s_reload"></a></div><!-- LINKS ENDS --><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/ajax_clock_small.gif" title="Memproses…" alt="Memproses…" style="visibility: hidden; display:none" class="throbber"></div><div id="pma_navigation_tree" class="list_container highlight" style="height: 545px;"><div id="pma_quick_warp"><div class="drop_list"><span title="Tabel terakhir" class="drop_button">Terbaru</span><ul id="pma_recent_list"><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=penjualan&amp;table=pembeli&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`penjualan`.`pembeli`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=penjualan&amp;table=supplier&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`penjualan`.`supplier`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=penjualan&amp;table=barang&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`penjualan`.`barang`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=penjualan&amp;table=pembayaran&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`penjualan`.`pembayaran`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=penjualan&amp;table=transaksi&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`penjualan`.`transaksi`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=penjualan&amp;table=Barang&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`penjualan`.`Barang`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=phpmyadmin&amp;table=pma_bookmark&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`phpmyadmin`.`pma_bookmark`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=phpmyadmin&amp;table=pma_column_info&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`phpmyadmin`.`pma_column_info`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=phpmyadmin&amp;table=pma_designer_coords&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`phpmyadmin`.`pma_designer_coords`</a></li><li class="warp_link"><a href="http://localhost/phpmyadmin/sql.php?db=phpmyadmin&amp;table=pma_history&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">`phpmyadmin`.`pma_history`</a></li></ul></div><div class="drop_list"><span title="Tabel favorit" class="drop_button">Favorit</span><ul id="pma_favorite_list"><li class="warp_link">Tidak ada tabel favorit terbaru.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><div id="pma_navigation_tree_content" style="height: 521px;"><ul><li class="first new_database italics"><div class="block"><i class="first"></i></div><div class="block"><a href="http://localhost/phpmyadmin/server_databases.php?server=1&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/server_databases.php?server=1&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">New</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.Y2Rjb2w=</span><span class="hide vPath">cm9vdA==.Y2Rjb2w=</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=cdcol&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=cdcol&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">cdcol</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.ZGI=</span><span class="hide vPath">cm9vdA==.ZGI=</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=db&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=db&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">db</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide vPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=information_schema&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=information_schema&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">information_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.bXlzcWw=</span><span class="hide vPath">cm9vdA==.bXlzcWw=</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=mysql&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=mysql&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">mysql</a><div class="clearfloat"></div></li><li class="database selected"><div class="block"><i></i><b></b><a class="expander loaded" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVuanVhbGFu</span><span class="hide vPath">cm9vdA==.cGVuanVhbGFu</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="" alt="" class="icon ic_b_minus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">penjualan</a><div class="clearfloat"></div><div class="list_container"><ul><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><li class="new_table italics new_table italics"><div class="block"><i></i><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span></div><div class="block"><a href="http://localhost/phpmyadmin/tbl_create.php?server=1&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="New" alt="New" class="icon ic_b_table_add"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/tbl_create.php?server=1&amp;db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">New</a><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVuanVhbGFu.dGFibGVz.YmFyYW5n</span><span class="hide vPath">cm9vdA==.cGVuanVhbGFu.VGFiZWw=.YmFyYW5n</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=penjualan&amp;table=barang&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Struktur" alt="Struktur" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=penjualan&amp;table=barang&amp;pos=0&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">barang</a><span class="navItemControls"><a href="http://localhost/phpmyadmin/navigation.php?token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;hideNavItem=true&amp;itemType=table&amp;itemName=barang&amp;dbName=penjualan" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Sembunyikan" alt="Sembunyikan" class="icon ic_lightbulb_off"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVuanVhbGFu.dGFibGVz.cGVtYmF5YXJhbg==</span><span class="hide vPath">cm9vdA==.cGVuanVhbGFu.VGFiZWw=.cGVtYmF5YXJhbg==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=penjualan&amp;table=pembayaran&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Struktur" alt="Struktur" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=penjualan&amp;table=pembayaran&amp;pos=0&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">pembayaran</a><span class="navItemControls"><a href="http://localhost/phpmyadmin/navigation.php?token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;hideNavItem=true&amp;itemType=table&amp;itemName=pembayaran&amp;dbName=penjualan" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Sembunyikan" alt="Sembunyikan" class="icon ic_lightbulb_off"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVuanVhbGFu.dGFibGVz.cGVtYmVsaQ==</span><span class="hide vPath">cm9vdA==.cGVuanVhbGFu.VGFiZWw=.cGVtYmVsaQ==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=penjualan&amp;table=pembeli&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Struktur" alt="Struktur" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=penjualan&amp;table=pembeli&amp;pos=0&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">pembeli</a><span class="navItemControls"><a href="http://localhost/phpmyadmin/navigation.php?token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;hideNavItem=true&amp;itemType=table&amp;itemName=pembeli&amp;dbName=penjualan" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Sembunyikan" alt="Sembunyikan" class="icon ic_lightbulb_off"></a></span><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVuanVhbGFu.dGFibGVz.c3VwcGxpZXI=</span><span class="hide vPath">cm9vdA==.cGVuanVhbGFu.VGFiZWw=.c3VwcGxpZXI=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=penjualan&amp;table=supplier&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Struktur" alt="Struktur" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=penjualan&amp;table=supplier&amp;pos=0&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">supplier</a><span class="navItemControls"><a href="http://localhost/phpmyadmin/navigation.php?token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;hideNavItem=true&amp;itemType=table&amp;itemName=supplier&amp;dbName=penjualan" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Sembunyikan" alt="Sembunyikan" class="icon ic_lightbulb_off"></a></span><div class="clearfloat"></div></li><li class="table last table"><div class="block"><i></i><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVuanVhbGFu.dGFibGVz.dHJhbnNha3Np</span><span class="hide vPath">cm9vdA==.cGVuanVhbGFu.VGFiZWw=.dHJhbnNha3Np</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=penjualan&amp;table=transaksi&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Struktur" alt="Struktur" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=penjualan&amp;table=transaksi&amp;pos=0&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">transaksi</a><span class="navItemControls"><a href="http://localhost/phpmyadmin/navigation.php?token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;hideNavItem=true&amp;itemType=table&amp;itemName=transaksi&amp;dbName=penjualan" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Sembunyikan" alt="Sembunyikan" class="icon ic_lightbulb_off"></a></span><div class="clearfloat"></div></li></ul></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide vPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=performance_schema&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=performance_schema&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.cGhwbXlhZG1pbg==</span><span class="hide vPath">cm9vdA==.cGhwbXlhZG1pbg==</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=phpmyadmin&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=phpmyadmin&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">phpmyadmin</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.dGVzdA==</span><span class="hide vPath">cm9vdA==.dGVzdA==</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=test&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=test&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">test</a><div class="clearfloat"></div></li><li class="last database"><div class="block"><i></i><a class="expander" href="http://localhost/phpmyadmin/tbl_structure.php#"><span class="hide aPath">cm9vdA==.d2ViYXV0aA==</span><span class="hide vPath">cm9vdA==.d2ViYXV0aA==</span><span class="hide pos">0</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block"><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=webauth&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=webauth&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7">webauth</a><div class="clearfloat"></div></li></ul></div></div></div></div><div id="floating_menubar" style="margin-left: 243px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 500;"><div id="serverinfo"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="" alt="" class="icon ic_s_host item"><a href="http://localhost/phpmyadmin/index.php?token=a1c51a1c49ac88de77e7a6dca93b22d7" class="item">Server: 127.0.0.1</a><span class="separator item">&nbsp;»</span><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="" alt="" class="icon ic_s_db item"><a href="http://localhost/phpmyadmin/db_structure.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7" class="item">Basis data: penjualan</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><ul id="topmenu" class="resizable-menu"><li><a class="tab" href="http://localhost/phpmyadmin/db_structure.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Struktur" alt="Struktur" class="icon ic_b_props"> Struktur</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_sql.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql"> SQL</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_search.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Cari" alt="Cari" class="icon ic_b_search"> Cari</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_qbe.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Kueri" alt="Kueri" class="icon ic_s_db"> Kueri</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_export.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Ekspor" alt="Ekspor" class="icon ic_b_export"> Ekspor</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_import.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Impor" alt="Impor" class="icon ic_b_import"> Impor</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_operations.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Operasi" alt="Operasi" class="icon ic_b_tblops"> Operasi</a></li><li><a class="tab" href="http://localhost/phpmyadmin/server_privileges.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7&amp;checkprivsdb=penjualan&amp;viewing_mode=db"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Hak Akses" alt="Hak Akses" class="icon ic_s_rights"> Hak Akses</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_routines.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Routine" alt="Routine" class="icon ic_b_routines"> Routine</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_events.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Event" alt="Event" class="icon ic_b_events"> Event</a></li><li><a class="tab" href="http://localhost/phpmyadmin/db_triggers.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Trigger" alt="Trigger" class="icon ic_b_triggers"> Trigger</a></li><li class="submenu shown active" style=""><a href="http://localhost/phpmyadmin/tbl_structure.php#" class="nowrap tabactive"><img alt="" title="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" class="icon ic_b_more">Lainnya</a><ul class="notonly"><li><a class="tab" href="http://localhost/phpmyadmin/db_tracking.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Pelacakan" alt="Pelacakan" class="icon ic_eye"> Pelacakan</a></li><li class="active"><a class="tabactive" href="http://localhost/phpmyadmin/pmd_general.php?db=penjualan&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Desainer" alt="Desainer" class="icon ic_b_relations"> Desainer</a></li></ul></li><div class="clearfloat"></div></ul>
+</div>
+</div>
+<a id="goto_pagetop" href="http://localhost/phpmyadmin/tbl_structure.php#" title="Klik pada bar untuk menggulir ke atas halaman"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="" alt="" class="icon ic_s_top"></a><div id="page_content" style="margin-left: 3px;"><div id="script_server" class="hide">1</div><div id="script_db" class="hide">penjualan</div><div id="script_token" class="hide">a1c51a1c49ac88de77e7a6dca93b22d7</div><div id="script_tables" class="hide">{"j_tabs":{"penjualan.barang":1,"penjualan.pembayaran":1,"penjualan.pembeli":1,"penjualan.supplier":1,"penjualan.transaksi":1},"h_tabs":{"penjualan.barang":1,"penjualan.pembayaran":1,"penjualan.pembeli":1,"penjualan.supplier":1,"penjualan.transaksi":1}}</div><div id="script_contr" class="hide">[]</div><div id="script_display_field" class="hide">[]</div><div class="pmd_header" id="top_menu">
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Show_left_menu(document.getElementById(&#39;key_Show_left_menu&#39;)); return false" class="M_butt first" target="_self">
+        <img id="key_Show_left_menu" title="Tampilkan/Sembunyikan menu kiri" alt="v" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/downarrow2_m.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" id="enterFullscreen" onclick="Enter_fullscreen(); return false" class="M_butt" target="_self">
+        <img title="View in fullscreen" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/viewInFullscreen.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" id="exitFullscreen" onclick="Exit_fullscreen(); return false" class="M_butt hide" target="_self" style="display: none;">
+        <img title="Exit fullscreen" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exitFullscreen.png">
+    </a>
+    <img class="M_bord" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/bord.png" alt="">
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Save2(); return false" class="M_butt" target="_self">
+        <img title="Simpan posisi" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/save.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Start_table_new(); return false" class="M_butt" target="_self">
+        <img title="Buat tabel" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/table.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Start_relation(); return false" class="M_butt" id="rel_button" target="_self">
+        <img title="Buat relasi" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/relation.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Start_display_field(); return false" class="M_butt" id="display_field_button" target="_self">
+        <img title="Pilih kolom untuk ditampilkan" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/display_field.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="location.reload(); return false" class="M_butt" target="_self">
+        <img title="Muat ulang" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/reload.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/doc/html/faq.html#faq6-31" target="documentation" class="M_butt">
+        <img title="Bantuan" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/help.png">
+    </a>
+    <img class="M_bord" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/bord.png" alt="">
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Angular_direct(); return false" class="M_butt" id="angular_direct_button" target="_self">
+        <img title="Tautan angular / Tautan langsung" alt="" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/ang_direct.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Grid(); return false" class="M_butt" id="grid_button" target="_self">
+        <img title="Lekatkan kepada kisi" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/grid.png" alt="">
+    </a>
+    <img class="M_bord" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/bord.png" alt="">
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Small_tab_all(document.getElementById(&#39;key_SB_all&#39;)); return false" class="M_butt" target="_self">
+        <img id="key_SB_all" title="Small/Big All" alt="v" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/downarrow1.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Small_tab_invert(); return false" class="M_butt" target="_self">
+        <img title="Toggle small/big" alt="key" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/bottom.png">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Relation_lines_invert(); return false" class="M_butt" target="_self">
+        <img title="Toggle relation lines" alt="key" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/toggle_lines.png">
+    </a>
+    <img class="M_bord" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/bord.png" alt="">
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="PDF_save(); return false" class="M_butt ajax">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/pdf.png" alt="key" width="20" height="20" title="Import/Export coordinates for relational schema">
+    </a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Top_menu_right(document.getElementById(&#39;key_Left_Right&#39;)); return false" class="M_butt last" target="_self">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/2rightarrow_m.png" id="key_Left_Right" alt="&gt;" title="Pindahkan Menu">
+    </a>
+</div>
+
+<div id="canvas_outer">
+<form action="http://localhost/phpmyadmin/tbl_structure.php" method="post" name="form1">
+<div id="osn_tab" style="width: 795px; height: 598px;">
+  <canvas class="pmd" id="canvas" width="792" height="595" onclick="Canvas_click(this)" style="display: inline-block;"></canvas>
+</div>
+<div id="layer_menu" style="display: none; top: -1000px;">
+<div class="center" style="padding-top:5px;">
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="Hide_tab_all(document.getElementById(&#39;key_HS_all&#39;)); return false" class="M_butt" target="_self">
+    <img title="Sembunyikan/Tampilkan semua" alt="v" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/downarrow1.png" id="key_HS_all"></a>
+    <a href="http://localhost/phpmyadmin/tbl_structure.php#" onclick="No_have_constr(document.getElementById(&#39;key_HS&#39;)); return false" class="M_butt" target="_self">
+    <img title="Tampilkan/Sembunyikan Tabel tanpa relasi" alt="v" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/downarrow2.png" id="key_HS"></a>
+</div>
+
+<div id="id_scroll_tab" class="scroll_tab">
+    <table width="100%" style="padding-left: 3px;">
+<tbody><tr><td title="Struktur" width="1px" onmouseover="this.className=&#39;L_butt2_2&#39;" onmouseout="this.className=&#39;L_butt2_1&#39;" class="L_butt2_1"><img onclick="Start_tab_upd(&#39;barang&#39;);" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec.png" alt=""></td><td width="1px"><input onclick="VisibleTab(this,&#39;penjualan.barang&#39;)" title="Sembunyikan" id="check_vis_penjualan.barang" style="margin:0px;" type="checkbox" value="penjualan.barang" checked="checked"></td><td class="pmd_Tabs" onmouseover="this.className=&#39;pmd_Tabs2&#39;" onmouseout="this.className=&#39;pmd_Tabs&#39;" onclick="Select_tab(&#39;penjualan.barang&#39;);">penjualan.barang</td></tr><tr><td title="Struktur" width="1px" onmouseover="this.className=&#39;L_butt2_2&#39;" onmouseout="this.className=&#39;L_butt2_1&#39;" class="L_butt2_1"><img onclick="Start_tab_upd(&#39;pembayaran&#39;);" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec.png" alt=""></td><td width="1px"><input onclick="VisibleTab(this,&#39;penjualan.pembayaran&#39;)" title="Sembunyikan" id="check_vis_penjualan.pembayaran" style="margin:0px;" type="checkbox" value="penjualan.pembayaran" checked="checked"></td><td class="pmd_Tabs" onmouseover="this.className=&#39;pmd_Tabs2&#39;" onmouseout="this.className=&#39;pmd_Tabs&#39;" onclick="Select_tab(&#39;penjualan.pembayaran&#39;);">penjualan.pembayaran</td></tr><tr><td title="Struktur" width="1px" onmouseover="this.className=&#39;L_butt2_2&#39;" onmouseout="this.className=&#39;L_butt2_1&#39;" class="L_butt2_1"><img onclick="Start_tab_upd(&#39;pembeli&#39;);" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec.png" alt=""></td><td width="1px"><input onclick="VisibleTab(this,&#39;penjualan.pembeli&#39;)" title="Sembunyikan" id="check_vis_penjualan.pembeli" style="margin:0px;" type="checkbox" value="penjualan.pembeli" checked="checked"></td><td class="pmd_Tabs" onmouseover="this.className=&#39;pmd_Tabs2&#39;" onmouseout="this.className=&#39;pmd_Tabs&#39;" onclick="Select_tab(&#39;penjualan.pembeli&#39;);">penjualan.pembeli</td></tr><tr><td title="Struktur" width="1px" onmouseover="this.className=&#39;L_butt2_2&#39;" onmouseout="this.className=&#39;L_butt2_1&#39;" class="L_butt2_1"><img onclick="Start_tab_upd(&#39;supplier&#39;);" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec.png" alt=""></td><td width="1px"><input onclick="VisibleTab(this,&#39;penjualan.supplier&#39;)" title="Sembunyikan" id="check_vis_penjualan.supplier" style="margin:0px;" type="checkbox" value="penjualan.supplier" checked="checked"></td><td class="pmd_Tabs" onmouseover="this.className=&#39;pmd_Tabs2&#39;" onmouseout="this.className=&#39;pmd_Tabs&#39;" onclick="Select_tab(&#39;penjualan.supplier&#39;);">penjualan.supplier</td></tr><tr><td title="Struktur" width="1px" onmouseover="this.className=&#39;L_butt2_2&#39;" onmouseout="this.className=&#39;L_butt2_1&#39;" class="L_butt2_1"><img onclick="Start_tab_upd(&#39;transaksi&#39;);" src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec.png" alt=""></td><td width="1px"><input onclick="VisibleTab(this,&#39;penjualan.transaksi&#39;)" title="Sembunyikan" id="check_vis_penjualan.transaksi" style="margin:0px;" type="checkbox" value="penjualan.transaksi" checked="checked"></td><td class="pmd_Tabs" onmouseover="this.className=&#39;pmd_Tabs2&#39;" onmouseout="this.className=&#39;pmd_Tabs&#39;" onclick="Select_tab(&#39;penjualan.transaksi&#39;);">penjualan.transaksi</td></tr></tbody></table></div><div class="center">Number of tables: 5</div><div class="floatright"><div id="layer_menu_sizer" onmousedown="layer_menu_cur_click=1"></div></div></div><input name="t_x[penjualan.barang]" type="hidden" id="t_x_penjualan.barang_"><input name="t_y[penjualan.barang]" type="hidden" id="t_y_penjualan.barang_"><input name="t_v[penjualan.barang]" type="hidden" id="t_v_penjualan.barang_"><input name="t_h[penjualan.barang]" type="hidden" id="t_h_penjualan.barang_"><table id="penjualan.barang" cellpadding="0" cellspacing="0" class="pmd_tab" style="position: absolute;
+          left: 35px;
+          top: 83px;
+          visibility: visible;
+         z-index: 1;">
+<thead>
+<tr>
+        <td class="small_tab" onmouseover="this.className=&#39;small_tab2&#39;;" onmouseout="this.className=&#39;small_tab&#39;;" id="id_hide_tbody_penjualan.barang" onclick="Small_tab(&#39;penjualan.barang&#39;, 1)">v</td>
+    <td class="small_tab_pref" onmouseover="this.className=&#39;small_tab_pref2&#39;;" onmouseout="this.className=&#39;small_tab_pref&#39;;" onclick="Start_tab_upd(&#39;barang&#39;);">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec_small.png" alt=""></td>
+    <td id="id_zag_penjualan.barang" class="tab_zag nowrap" onmousedown="cur_click=document.getElementById(&#39;penjualan.barang&#39;);" onmouseover="Table_onover(&#39;penjualan.barang&#39;,0,0 )" onmouseout="Table_onover(&#39;penjualan.barang&#39;,1,0)">
+        <span class="owner">
+            penjualan.
+        </span>
+        barang    </td>
+        </tr>
+    </thead>
+    <tbody id="id_tbody_penjualan.barang"><tr id="id_tr_barang.id_barang" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;barang&#39;,&#39;id_barang&#39;,1)">
+            <td width="10px" colspan="3" id="penjualan.barang.id_barang">
+        <div class="nowrap">
+                        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/FieldKey_small.png" alt="*">
+            id_barang : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_barang.nama_barang" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;barang&#39;,&#39;nama_barang&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.barang.nama_barang">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            nama_barang : varchar(20)</div>
+</td>
+</tr>
+<tr id="id_tr_barang.stock" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;barang&#39;,&#39;stock&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.barang.stock">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            stock : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_barang.harga_beli" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;barang&#39;,&#39;harga_beli&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.barang.harga_beli">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            harga_beli : int(100)</div>
+</td>
+</tr>
+<tr id="id_tr_barang.id_supplier" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;barang&#39;,&#39;id_supplier&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.barang.id_supplier">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            id_supplier : int(11)</div>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="t_x[penjualan.pembayaran]" type="hidden" id="t_x_penjualan.pembayaran_"><input name="t_y[penjualan.pembayaran]" type="hidden" id="t_y_penjualan.pembayaran_"><input name="t_v[penjualan.pembayaran]" type="hidden" id="t_v_penjualan.pembayaran_"><input name="t_h[penjualan.pembayaran]" type="hidden" id="t_h_penjualan.pembayaran_"><table id="penjualan.pembayaran" cellpadding="0" cellspacing="0" class="pmd_tab" style="position: absolute; left: 537px; top: 76px; visibility: visible; z-index: 1;">
+<thead>
+<tr>
+        <td class="small_tab" onmouseover="this.className=&#39;small_tab2&#39;;" onmouseout="this.className=&#39;small_tab&#39;;" id="id_hide_tbody_penjualan.pembayaran" onclick="Small_tab(&#39;penjualan.pembayaran&#39;, 1)">v</td>
+    <td class="small_tab_pref" onmouseover="this.className=&#39;small_tab_pref2&#39;;" onmouseout="this.className=&#39;small_tab_pref&#39;;" onclick="Start_tab_upd(&#39;pembayaran&#39;);">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec_small.png" alt=""></td>
+    <td id="id_zag_penjualan.pembayaran" class="tab_zag" onmousedown="cur_click=document.getElementById(&#39;penjualan.pembayaran&#39;);" onmouseover="Table_onover(&#39;penjualan.pembayaran&#39;,0,0 )" onmouseout="Table_onover(&#39;penjualan.pembayaran&#39;,1,0)">
+        <span class="owner">
+            penjualan.
+        </span>
+        pembayaran    </td>
+        </tr>
+    </thead>
+    <tbody id="id_tbody_penjualan.pembayaran"><tr id="id_tr_pembayaran.id_pembayaran" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembayaran&#39;,&#39;id_pembayaran&#39;,1)">
+            <td width="10px" colspan="3" id="penjualan.pembayaran.id_pembayaran">
+        <div class="nowrap">
+                        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/FieldKey_small.png" alt="*">
+            id_pembayaran : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_pembayaran.tgl_bayar" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembayaran&#39;,&#39;tgl_bayar&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembayaran.tgl_bayar">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_date.png" alt="*">
+            tgl_bayar : date</div>
+</td>
+</tr>
+<tr id="id_tr_pembayaran.total_bayar" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembayaran&#39;,&#39;total_bayar&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembayaran.total_bayar">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            total_bayar : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_pembayaran.diskon" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembayaran&#39;,&#39;diskon&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembayaran.diskon">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            diskon : int(20)</div>
+</td>
+</tr>
+<tr id="id_tr_pembayaran.id_transaksi" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembayaran&#39;,&#39;id_transaksi&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembayaran.id_transaksi">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            id_transaksi : int(11)</div>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="t_x[penjualan.pembeli]" type="hidden" id="t_x_penjualan.pembeli_"><input name="t_y[penjualan.pembeli]" type="hidden" id="t_y_penjualan.pembeli_"><input name="t_v[penjualan.pembeli]" type="hidden" id="t_v_penjualan.pembeli_"><input name="t_h[penjualan.pembeli]" type="hidden" id="t_h_penjualan.pembeli_"><table id="penjualan.pembeli" cellpadding="0" cellspacing="0" class="pmd_tab" style="position: absolute; left: 557px; top: 409px; visibility: visible; z-index: 1;">
+<thead>
+<tr>
+        <td class="small_tab" onmouseover="this.className=&#39;small_tab2&#39;;" onmouseout="this.className=&#39;small_tab&#39;;" id="id_hide_tbody_penjualan.pembeli" onclick="Small_tab(&#39;penjualan.pembeli&#39;, 1)">v</td>
+    <td class="small_tab_pref" onmouseover="this.className=&#39;small_tab_pref2&#39;;" onmouseout="this.className=&#39;small_tab_pref&#39;;" onclick="Start_tab_upd(&#39;pembeli&#39;);">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec_small.png" alt=""></td>
+    <td id="id_zag_penjualan.pembeli" class="tab_zag" onmousedown="cur_click=document.getElementById(&#39;penjualan.pembeli&#39;);" onmouseover="Table_onover(&#39;penjualan.pembeli&#39;,0,0 )" onmouseout="Table_onover(&#39;penjualan.pembeli&#39;,1,0)">
+        <span class="owner">
+            penjualan.
+        </span>
+        pembeli    </td>
+        </tr>
+    </thead>
+    <tbody id="id_tbody_penjualan.pembeli"><tr id="id_tr_pembeli.id_pembeli" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembeli&#39;,&#39;id_pembeli&#39;,1)">
+            <td width="10px" colspan="3" id="penjualan.pembeli.id_pembeli">
+        <div class="nowrap">
+                        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/FieldKey_small.png" alt="*">
+            id_pembeli : int(15)</div>
+</td>
+</tr>
+<tr id="id_tr_pembeli.nama_pembeli" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembeli&#39;,&#39;nama_pembeli&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembeli.nama_pembeli">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            nama_pembeli : varchar(30)</div>
+</td>
+</tr>
+<tr id="id_tr_pembeli.jk" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembeli&#39;,&#39;jk&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembeli.jk">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            jk : char(1)</div>
+</td>
+</tr>
+<tr id="id_tr_pembeli.no_telpon" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembeli&#39;,&#39;no_telpon&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembeli.no_telpon">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            no_telpon : char(14)</div>
+</td>
+</tr>
+<tr id="id_tr_pembeli.alamat" class="tab_field_2" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;pembeli&#39;,&#39;alamat&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.pembeli.alamat">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            alamat : varchar(50)</div>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="t_x[penjualan.supplier]" type="hidden" id="t_x_penjualan.supplier_"><input name="t_y[penjualan.supplier]" type="hidden" id="t_y_penjualan.supplier_"><input name="t_v[penjualan.supplier]" type="hidden" id="t_v_penjualan.supplier_"><input name="t_h[penjualan.supplier]" type="hidden" id="t_h_penjualan.supplier_"><table id="penjualan.supplier" cellpadding="0" cellspacing="0" class="pmd_tab" style="position: absolute; left: 16px; top: 404px; visibility: visible; z-index: 1;">
+<thead>
+<tr>
+        <td class="small_tab" onmouseover="this.className=&#39;small_tab2&#39;;" onmouseout="this.className=&#39;small_tab&#39;;" id="id_hide_tbody_penjualan.supplier" onclick="Small_tab(&#39;penjualan.supplier&#39;, 1)">v</td>
+    <td class="small_tab_pref" onmouseover="this.className=&#39;small_tab_pref2&#39;;" onmouseout="this.className=&#39;small_tab_pref&#39;;" onclick="Start_tab_upd(&#39;supplier&#39;);">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec_small.png" alt=""></td>
+    <td id="id_zag_penjualan.supplier" class="tab_zag" onmousedown="cur_click=document.getElementById(&#39;penjualan.supplier&#39;);" onmouseover="Table_onover(&#39;penjualan.supplier&#39;,0,0 )" onmouseout="Table_onover(&#39;penjualan.supplier&#39;,1,0)">
+        <span class="owner">
+            penjualan.
+        </span>
+        supplier    </td>
+        </tr>
+    </thead>
+    <tbody id="id_tbody_penjualan.supplier"><tr id="id_tr_supplier.id_supplier" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;supplier&#39;,&#39;id_supplier&#39;,1)">
+            <td width="10px" colspan="3" id="penjualan.supplier.id_supplier">
+        <div class="nowrap">
+                        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/FieldKey_small.png" alt="*">
+            id_supplier : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_supplier.nama_supplier" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;supplier&#39;,&#39;nama_supplier&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.supplier.nama_supplier">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            nama_supplier : varchar(30)</div>
+</td>
+</tr>
+<tr id="id_tr_supplier.no_telpon" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;supplier&#39;,&#39;no_telpon&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.supplier.no_telpon">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            no_telpon : char(13)</div>
+</td>
+</tr>
+<tr id="id_tr_supplier.alamat" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;supplier&#39;,&#39;alamat&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.supplier.alamat">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            alamat : varchar(100)</div>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="t_x[penjualan.transaksi]" type="hidden" id="t_x_penjualan.transaksi_"><input name="t_y[penjualan.transaksi]" type="hidden" id="t_y_penjualan.transaksi_"><input name="t_v[penjualan.transaksi]" type="hidden" id="t_v_penjualan.transaksi_"><input name="t_h[penjualan.transaksi]" type="hidden" id="t_h_penjualan.transaksi_"><table id="penjualan.transaksi" cellpadding="0" cellspacing="0" class="pmd_tab" style="position: absolute; left: 302px; top: 244px; visibility: visible; z-index: 1;">
+<thead>
+<tr>
+        <td class="small_tab" onmouseover="this.className=&#39;small_tab2&#39;;" onmouseout="this.className=&#39;small_tab&#39;;" id="id_hide_tbody_penjualan.transaksi" onclick="Small_tab(&#39;penjualan.transaksi&#39;, 1)">v</td>
+    <td class="small_tab_pref" onmouseover="this.className=&#39;small_tab_pref2&#39;;" onmouseout="this.className=&#39;small_tab_pref&#39;;" onclick="Start_tab_upd(&#39;transaksi&#39;);">
+        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/exec_small.png" alt=""></td>
+    <td id="id_zag_penjualan.transaksi" class="tab_zag" onmousedown="cur_click=document.getElementById(&#39;penjualan.transaksi&#39;);" onmouseover="Table_onover(&#39;penjualan.transaksi&#39;,0,0 )" onmouseout="Table_onover(&#39;penjualan.transaksi&#39;,1,0)">
+        <span class="owner">
+            penjualan.
+        </span>
+        transaksi    </td>
+        </tr>
+    </thead>
+    <tbody id="id_tbody_penjualan.transaksi"><tr id="id_tr_transaksi.id_transaksi" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;transaksi&#39;,&#39;id_transaksi&#39;,1)">
+            <td width="10px" colspan="3" id="penjualan.transaksi.id_transaksi">
+        <div class="nowrap">
+                        <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/FieldKey_small.png" alt="*">
+            id_transaksi : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_transaksi.id_barang" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;transaksi&#39;,&#39;id_barang&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.transaksi.id_barang">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            id_barang : int(30)</div>
+</td>
+</tr>
+<tr id="id_tr_transaksi.id_pembeli" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;transaksi&#39;,&#39;id_pembeli&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.transaksi.id_pembeli">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_int.png" alt="*">
+            id_pembeli : int(11)</div>
+</td>
+</tr>
+<tr id="id_tr_transaksi.tanggal" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;transaksi&#39;,&#39;tanggal&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.transaksi.tanggal">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_date.png" alt="*">
+            tanggal : date</div>
+</td>
+</tr>
+<tr id="id_tr_transaksi.keterangan" class="tab_field" onmouseover="old_class = this.className; this.className = &#39;tab_field_2&#39;;" onmouseout="this.className = old_class;" onmousedown="Click_field(&#39;transaksi&#39;,&#39;keterangan&#39;,0)">
+            <td width="10px" colspan="3" id="penjualan.transaksi.keterangan">
+        <div class="nowrap">
+                            <img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/Field_small_char.png" alt="*">
+            keterangan : varchar(100)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+<div id="pmd_hint"></div>
+
+<table id="layer_new_relation" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+    <td class="frams1" width="10px"></td>
+    <td class="frams5" width="99%"></td>
+    <td class="frams2" width="10px"><div class="bor"></div></td>
+</tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+        <table width="168" class="center" cellpadding="2" cellspacing="0">
+        <thead>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <strong>Buat relasi</strong>
+            </td>
+        </tr>
+        </thead>
+        <tbody id="foreign_relation">
+        <tr>
+        <td colspan="2" class="center nowrap"><strong>FOREIGN KEY</strong></td>
+        </tr>
+        <tr>
+            <td width="58" class="nowrap">on delete</td>
+            <td width="102"><select name="on_delete" id="on_delete">
+                    <option value="nix" selected="selected">--</option>
+                    <option value="CASCADE">CASCADE</option>
+                    <option value="SET NULL">SET NULL</option>
+                    <option value="NO ACTION">NO ACTION</option>
+                    <option value="RESTRICT">RESTRICT</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="nowrap">on update</td>
+            <td><select name="on_update" id="on_update">
+                    <option value="nix" selected="selected">--</option>
+                    <option value="CASCADE">CASCADE</option>
+                    <option value="SET NULL">SET NULL</option>
+                    <option value="NO ACTION">NO ACTION</option>
+                    <option value="RESTRICT">RESTRICT</option>
+                </select>
+            </td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <input type="button" class="butt" name="Button" value="Oke" onclick="New_relation()">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="document.getElementById(&#39;layer_new_relation&#39;).style.display = &#39;none&#39;;">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+<table id="layer_upd_relation" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+    <td class="frams1" width="10px"></td>
+    <td class="frams5" width="99%"></td>
+    <td class="frams2" width="10px"><div class="bor"></div></td>
+</tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+        <table width="100%" class="center" cellpadding="2" cellspacing="0">
+        <tbody><tr>
+            <td colspan="3" class="center nowrap">
+                <strong>Hapus relasi</strong>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="center nowrap">
+                <input name="Button" type="button" class="butt" onclick="Upd_relation()" value="Hapus">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="document.getElementById(&#39;layer_upd_relation&#39;).style.display = &#39;none&#39;; Re_load();">
+            </td>
+        </tr>
+    </tbody></table></td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+<table id="pmd_optionse" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+    <td class="frams1" width="10px"></td>
+    <td class="frams5" width="99%"></td>
+    <td class="frams2" width="10px"><div class="bor"></div></td>
+</tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+        <table width="168" class="center" cellpadding="2" cellspacing="0">
+       <thead>
+        <tr>
+            <td colspan="2" rowspan="2" id="option_col_name" class="center nowrap">
+            </td>
+        </tr>
+        </thead>
+        <tbody id="where">
+        <tr><td class="center nowrap"><b>WHERE</b></td></tr>
+        <tr>
+        <td width="58" class="nowrap">Operator relasi</td>
+            <td width="102"><select name="rel_opt" id="rel_opt">
+                    <option value="--" selected="selected"> -- </option>
+                    <option value="="> = </option>
+                    <option value="&gt;"> &gt; </option>
+                    <option value="&lt;"> &lt; </option>
+                    <option value="&gt;="> &gt;= </option>
+                    <option value="&lt;="> &lt;= </option>
+                    <option value="NOT"> NOT </option>
+                    <option value="IN"> IN </option>
+                    <option value="EXCEPT"> Kecuali </option>
+                    <option value="NOT IN"> NOT IN </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        <td class="nowrap">Nilai/<br>subkueri</td>
+            <td><textarea id="Query" value="" cols="18"></textarea>
+            </td>
+        </tr>
+        <tr><td class="center nowrap"><b>Ubah nama menjadi</b></td></tr>
+        <tr>
+        <td width="58" class="nowrap">Nama baru</td>
+            <td width="102"><input type="text" value="" id="new_name"></td>
+        </tr>
+        <tr><td class="center nowrap"><b>Agregasi</b></td></tr>
+         <tr>
+         <td width="58" class="nowrap">Operator</td>
+            <td width="102"><select name="operator" id="operator">
+                    <option value="---" selected="selected">---</option>
+                    <option value="sum"> SUM </option>
+                    <option value="min"> MIN </option>
+                    <option value="max"> MAX </option>
+                    <option value="avg"> AVG </option>
+                    <option value="count"> COUNT </option>
+                    </select>
+           </td></tr>
+           <tr>
+                <td width="58" class="center nowrap"><b>GROUP BY</b></td>
+                <td><input type="checkbox" value="groupby" id="groupby"></td>
+           </tr>
+           <tr>
+                <td width="58" class="center nowrap"><b>ORDER BY</b></td>
+                <td><input type="checkbox" value="orderby" id="orderby"></td>
+           </tr>
+          <tr><td class="center nowrap"><b>HAVING</b></td></tr>
+          <tr>
+          <td width="58" class="nowrap">Operator</td>
+            <td width="102"><select name="h_operator" id="h_operator">
+                    <option value="---" selected="selected">---</option>
+                    <option value="None"> Tidak ada </option>
+                    <option value="sum"> SUM </option>
+                    <option value="min"> MIN </option>
+                    <option value="max"> MAX </option>
+                    <option value="avg"> AVG </option>
+                    <option value="count"> COUNT </option>
+                    </select>
+               </td></tr>
+            <tr>
+            <td width="58" class="nowrap">Operator relasi</td>
+            <td width="102"><select name="h_rel_opt" id="h_rel_opt">
+                    <option value="--" selected="selected"> -- </option>
+                    <option value="="> = </option>
+                    <option value="&gt;"> &gt; </option>
+                    <option value="&lt;"> &lt; </option>
+                    <option value="&gt;="> &gt;= </option>
+                    <option value="&lt;="> &lt;= </option>
+                    <option value="NOT"> NOT </option>
+                    <option value="IN"> IN </option>
+                    <option value="EXCEPT"> Kecuali </option>
+                    <option value="NOT IN"> NOT IN </option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td width="58" class="nowrap">
+                    Nilai/<br>
+                    subkueri                </td>
+                <td width="102">
+                    <textarea id="having" value="" cols="18"></textarea>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <input type="button" class="butt" name="Button" value="Oke" onclick="add_object()">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="Close_option()">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+<table id="query_rename_to" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+    <td class="frams1" width="10px"></td>
+    <td class="frams5" width="99%"></td>
+    <td class="frams2" width="10px"><div class="bor"></div></td>
+</tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+        <table width="168" class="center" cellpadding="2" cellspacing="0">
+        <thead>
+            <tr>
+                <td colspan="2" class="center nowrap">
+                    <strong>Ubah nama menjadi</strong>
+                </td>
+            </tr>
+        </thead>
+        <tbody id="rename_to">
+        <tr>
+        <td width="58" class="nowrap">Nama baru</td>
+            <td width="102">
+                <input type="text" value="" id="e_rename">
+            </td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <input type="button" class="butt" name="Button" value="Oke" onclick="edit(&#39;Rename&#39;)">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="document.getElementById(&#39;query_rename_to&#39;).style.display = &#39;none&#39;;">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+<table id="query_having" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr>
+        <td class="frams1" width="10px"></td>
+        <td class="frams5" width="99%"></td>
+        <td class="frams2" width="10px"><div class="bor"></div></td>
+    </tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+    <table width="168" class="center" cellpadding="2" cellspacing="0">
+       <thead>
+        <tr>
+          <td colspan="2" class="center nowrap"><strong>HAVING</strong></td>
+        </tr>
+        </thead>
+        <tbody id="rename_to">
+        <tr>
+        <td width="58" class="nowrap">Operator</td>
+            <td width="102"><select name="hoperator" id="hoperator">
+                    <option value="---" selected="selected">---</option>
+                    <option value="None"> None </option>
+                    <option value="sum"> SUM </option>
+                    <option value="min"> MIN </option>
+                    <option value="max"> MAX </option>
+                    <option value="avg"> AVG </option>
+                    <option value="count"> COUNT </option>
+                    </select>
+           </td></tr>
+        <tr>
+        </tr><tr>
+        <td width="58" class="nowrap">Operator</td>
+            <td width="102"><select name="hrel_opt" id="hrel_opt">
+                <option value="--" selected="selected"> -- </option>
+                    <option value="="> = </option>
+                    <option value="&gt;"> &gt; </option>
+                    <option value="&lt;"> &lt; </option>
+                    <option value="&gt;="> &gt;= </option>
+                    <option value="&lt;="> &lt;= </option>
+                    <option value="NOT"> NOT </option>
+                    <option value="IN"> IN </option>
+                    <option value="EXCEPT"> Kecuali </option>
+                    <option value="NOT IN"> NOT IN </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        <td class="nowrap">Nilai/<br>subkueri</td>
+            <td><textarea id="hQuery" value="" cols="18"></textarea>
+            </td>
+            </tr>
+         </tbody>
+        <tbody>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <input type="button" class="butt" name="Button" value="Oke" onclick="edit(&#39;Having&#39;)">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="document.getElementById(&#39;query_having&#39;).style.display = &#39;none&#39;;">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+<table id="query_Aggregate" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+    <td class="frams1" width="10px"></td>
+    <td class="frams5" width="99%"></td>
+    <td class="frams2" width="10px"><div class="bor"></div></td>
+</tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+        <table width="168" class="center" cellpadding="2" cellspacing="0">
+            <thead>
+                <tr>
+                    <td colspan="2" class="center nowrap">
+                        <strong>Agregasi</strong>
+                    </td>
+                </tr>
+            </thead>
+        <tbody>
+        <tr>
+        <td width="58" class="nowrap">Operator</td>
+            <td width="102">
+                <select name="operator" id="e_operator">
+                    <option value="---" selected="selected">---</option>
+                    <option value="sum"> SUM </option>
+                    <option value="min"> MIN </option>
+                    <option value="max"> MAX </option>
+                       <option value="avg"> AVG </option>
+                    <option value="avg"> COUNT </option>
+                </select>
+           </td></tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <input type="button" class="butt" name="Button" value="Oke" onclick="edit(&#39;Aggregate&#39;)">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="document.getElementById(&#39;query_Aggregate&#39;).style.display = &#39;none&#39;;">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+<table id="query_where" style="display:none;" width="5%" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr>
+        <td class="frams1" width="10px"></td>
+        <td class="frams5" width="99%"></td>
+        <td class="frams2" width="10px"><div class="bor"></div></td>
+    </tr>
+<tr>
+    <td class="frams8"></td>
+    <td class="input_tab">
+    <table width="168" class="center" cellpadding="2" cellspacing="0">
+       <thead>
+        <tr>
+          <td colspan="2" class="center nowrap"><strong>WHERE</strong></td>
+        </tr>
+        </thead>
+        <tbody id="rename_to">
+        <tr>
+        <td width="58" class="nowrap">Operator</td>
+            <td width="102"><select name="erel_opt" id="erel_opt">
+                <option value="--" selected="selected"> -- </option>
+                    <option value="="> = </option>
+                    <option value="&gt;"> &gt; </option>
+                    <option value="&lt;"> &lt; </option>
+                    <option value="&gt;="> &gt;= </option>
+                    <option value="&lt;="> &lt;= </option>
+                    <option value="NOT"> NOT </option>
+                    <option value="IN"> IN </option>
+                    <option value="EXCEPT"> Kecuali </option>
+                    <option value="NOT IN"> NOT IN </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        <td class="nowrap">Nilai/<br>subkueri</td>
+            <td><textarea id="eQuery" value="" cols="18"></textarea>
+            </td>
+            </tr>
+         </tbody>
+        <tbody>
+        <tr>
+            <td colspan="2" class="center nowrap">
+                <input type="button" class="butt" name="Button" value="Oke" onclick="edit(&#39;Where&#39;)">
+                <input type="button" class="butt" name="Button" value="Batal" onclick="document.getElementById(&#39;query_where&#39;).style.display = &#39;none&#39;;">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+    <td class="frams6"></td>
+</tr>
+<tr>
+    <td class="frams4"><div class="bor"></div></td>
+    <td class="frams7"></td>
+    <td class="frams3"></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!-- cache images -->
+<img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/2leftarrow_m.png" width="0" height="0" alt=""><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/rightarrow1.png" width="0" height="0" alt=""><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/rightarrow2.png" width="0" height="0" alt=""><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/uparrow2_m.png" width="0" height="0" alt=""><div id="PMA_disable_floating_menubar"></div></div><div id="selflink" class="print_ignore"><a href="http://localhost/phpmyadmin/pmd_general.php?db=penjualan&amp;table=&amp;server=1&amp;target=&amp;token=a1c51a1c49ac88de77e7a6dca93b22d7" title="Buka jendela phpMyAdmin baru" target="_blank"><img src="./localhost _ 127.0.0.1 _ penjualan _ phpMyAdmin 4.2.11_files/dot.gif" title="Buka jendela phpMyAdmin baru" alt="Buka jendela phpMyAdmin baru" class="icon ic_window-new"></a></div></body></html>
