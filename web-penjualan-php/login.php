@@ -1,59 +1,118 @@
 <?php
-
-include 'function.php';
 session_start();
+include 'koneksi.php';
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING)); 
 
-if(isset($_POST['submit'])){
-
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
-   $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
-
-   $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
-
-   if(mysqli_num_rows($select) > 0){
-      $row = mysqli_fetch_assoc($select);
-      $_SESSION['user_id'] = $row['id'];
-      header('location:index.php');
-   }else{
-      $message[] = 'incorrect email or password!';
-   }
-
-}
+if ($_SESSION['kasir']) {
+	header("location:index.php");
+}else{
 
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>login</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Halaman Login</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
+    <!-- Bootstrap Core Css -->
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-   
-<div class="form-container">
 
-   <form action="" method="post" enctype="multipart/form-data">
-      <h3>login now</h3>
-      <?php
-      if(isset($message)){
-         foreach($message as $message){
-            echo '<div class="message">'.$message.'</div>';
-         }
-      }
-      ?>
-      <input type="email" name="email" placeholder="enter email" class="box" required>
-      <input type="password" name="password" placeholder="enter password" class="box" required>
-      <input type="submit" name="submit" value="login now" class="btn">
-      <p>don't have an account? <a href="register.php">regiser now</a></p>
-   </form>
+<body class="login-page">
+    <div class="login-box">
+        
+        <div class="card">
+            <div class="body">
+                <form id="sign_in" method="POST">
+                    <div class="msg">Masukan Username dan Password</div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">person</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-xs-4">
+                            
+                            <input type="submit" name="login" value="Login" class="btn btn-block bg-pink waves-effect">
+                        </div>
+                    </div>
+                   <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
 
-</div>
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
 
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Validation Plugin Js -->
+    <script src="plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/examples/sign-in.js"></script>
 </body>
+
 </html>
+
+<?php 
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+
+	$login = $_POST['login'];
+
+	if ($login) {
+		$sql = $koneksi->query("select * from user where username='$username' and password='$password' ");
+		$ketemu = $sql->num_rows;
+		$data=$sql->fetch_assoc();
+
+		if ($ketemu >= 1) {
+			session_start();
+
+			if ($data['level'] == "kasir") {
+				$_SESSION['kasir'] = $data[id];
+				header("location:index.php");
+			}
+		}else{
+			echo "Login Gagal";
+		}
+	}
+?>
+
+<?php } ?>
